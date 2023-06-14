@@ -1,0 +1,22 @@
+[
+  {
+    "grade": "Perfect",
+    "text": "You absolutely aced the test and maxed out the results! Congratulations!"
+  },
+  {
+    "grade": "Great",
+    "text": "Your result are really impressive. Keep it that way!"
+  },
+  {
+    "grade": "Good",
+    "text": "Your results seem to be somewhat average, but that's good! As long as they're not below it's fine."
+  },
+  {
+    "grade": "Not Bad",
+    "text": "Your results seem to be below average. But that doesn't have to mean anything, just prepare again, retake the exam, and I'm sure it'll be fine."
+  },
+  {
+    "grade": "Failed",
+    "text": "Unfortunately, you failed your exam, I would suggest attending extra lessons, preparing again, and acing the exam next time."
+  }
+]
