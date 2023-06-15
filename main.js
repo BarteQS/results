@@ -1,4 +1,4 @@
- function getRandomInt(min, max) {
+function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -45,7 +45,7 @@ fetch('http://127.0.0.1:5500/data.json')
     .then(res => res.json())
     .then(data => {
         grade.innerText = data[findGrade(scoreOverall)].grade;
-        grade.style.opacity = 1
+        grade.style.visibility = "visible";
         description.innerText = data[findGrade(scoreOverall)].text;
-        description.style.opacity = 1
+        description.style.visibility = "visible";
     });
