@@ -45,5 +45,7 @@ fetch('http://127.0.0.1:5500/data.json')
     .then(res => res.json())
     .then(data => {
         grade.innerText = data[findGrade(scoreOverall)].grade;
+        grade.style.opacity = 1
         description.innerText = data[findGrade(scoreOverall)].text;
+        description.style.opacity = 1
     });

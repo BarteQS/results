@@ -219,6 +219,11 @@ body {
     color: var(--clr-neutral-100);
     font-size: var(--fs-700);
     font-weight: var(--fw-bold);
+    opacity: 0;
+}
+
+.result-description {
+    opacity: 0;
 }
 
 .summary-item {
