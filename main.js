@@ -10,11 +10,11 @@ const verbal = getRandomInt(1, 100);
 const visual = getRandomInt(1, 100);
 const overall = Math.round((reaction + memory + verbal + visual) / 4);
 
-const scoreReaction = document.getElementById("reaction").innerText = String(reaction);
-const scoreMemory = document.getElementById("memory").innerText = String(memory);
-const scoreVerbal = document.getElementById("verbal").innerText = String(verbal);
-const scoreVisual = document.getElementById("visual").innerText = String(visual);
-const scoreOverall = document.getElementById("score").innerText = String(overall);
+const scoreReaction = document.getElementById("reaction").textContent = String(reaction);
+const scoreMemory = document.getElementById("memory").textContent = String(memory);
+const scoreVerbal = document.getElementById("verbal").textContent = String(verbal);
+const scoreVisual = document.getElementById("visual").textContent = String(visual);
+const scoreOverall = document.getElementById("score").textContent = String(overall);
 
 const grade = document.getElementById("grade");
 const description = document.getElementById("grade-description")
@@ -44,8 +44,8 @@ function findGrade(score) {
 fetch('http://127.0.0.1:5500/data.json')
     .then(res => res.json())
     .then(data => {
-        grade.innerText = data[findGrade(scoreOverall)].grade;
+        grade.textContent = data[findGrade(scoreOverall)].grade;
         grade.style.visibility = "visible";
-        description.innerText = data[findGrade(scoreOverall)].text;
+        description.textContent = data[findGrade(scoreOverall)].text;
         description.style.visibility = "visible";
     });
